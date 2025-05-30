@@ -26,9 +26,9 @@ Route::middleware('auth')->group(function () {
     Route::post('employee', [\App\Http\Controllers\employeecontroller::class, 'index'])->name('employee.index');
     //end of employee management
 
-    Route::get('employee/{id}/edit', [\App\Http\Controllers\ProfileController::class, 'update'])->name('employeee.edit');
-    Route::put('employee/{id}/edit', [\App\Http\Controllers\ProfileController::class, 'update'])->name('employee.edit');
-    Route::get('employee/{id}/delete', [\App\Http\Controllers\ProfileController::class, 'destroy'])->name('employee.delete');
+    Route::get('employee/{id}/edit', [\App\Http\Controllers\employeecontroller::class, 'update'])->name('employeee.edit');
+    Route::put('employee/{id}/edit', [\App\Http\Controllers\employeecontroller::class, 'update'])->name('employee.edit');
+    Route::get('employee/{id}/delete', [\App\Http\Controllers\employeecontroller::class, 'destroy'])->name('employee.delete');
 
 
 
